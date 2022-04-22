@@ -1,0 +1,36 @@
+.wrapper{
+  border: 1px solid #0000ff;
+  width: 400px;
+  margin: 20px 10px;
+  padding: 10px;
+  h2{
+    font-size: 35px;
+    
+  }
+  p{
+    .ans{
+      font-size: 50px;
+      font-weight: bold;
+      padding-left: 50px;
+    }
+  }
+  .btn1{
+    padding: 15px;
+    background-color: #008000;
+    color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .btn1:disabled,
+  .btn2:disabled{
+    cursor: not-allowed;
+  }
+  .btn2{
+    padding: 15px;
+    background-color: #ff0000;
+    color: #FFFFFF;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+}
