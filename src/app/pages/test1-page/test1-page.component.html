@@ -1,0 +1,29 @@
+<div class="user-detail">
+  <h1 class="header">{{title}}</h1>
+<button class="btn">Add User</button>
+
+
+  <table class="tbody">
+    <tr class="t-row">
+      <th>Id</th>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>UserName</th>
+      <th>Age</th>
+      <th>Salary</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr class="t-row" *ngFor="let user of userList">
+      <td>{{user.id}}</td>
+      <td>{{user.firstname}}</td>
+      <td>{{user.lastname}}</td>
+      <td>{{user.username}}</td>
+      <td>{{user.age}}</td>
+      <td>{{user.salary}}</td>
+      <td><button class="t-btn">Delete</button></td>
+      <td><button class="t-btn">Edit</button></td>
+    </tr>
+    
+  </table>
+</div>

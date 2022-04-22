@@ -1,0 +1,40 @@
+.user-detail{
+  .header{
+    text-align: center;
+  }
+  .btn{
+    padding: 10px;
+    background-color: #ff0000;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border: 0;
+  }
+  .tbody{
+    border-collapse: collapse;
+    width: 100%;
+    .t-row{
+      th{
+        padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #DDD;
+      }
+      td{
+        padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #DDD;
+      }
+      .t-btn{
+        padding: 8px;
+        background-color: #008000;
+        border-radius: 5px;
+        color: #FFFFFF;
+        border: 0;
+        text-align: center;
+      }
+    }
+    .t-row:hover{
+      background-color: #808080;
+    }
+  }
+}
+
