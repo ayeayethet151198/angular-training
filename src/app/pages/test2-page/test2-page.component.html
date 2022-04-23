@@ -1,7 +1,7 @@
 <div class="wrapper">
   <h2>Angular event Binding</h2>
   <p>Value on number on click event <span class="ans">{{value}}</span></p>
-  <button class="btn1" (click)="inFun($event)">Increment++</button>
-  <button class="btn2" (click)="deFun($event)">Decrement--</button>
+  <button class="btn1" (click)="inFun()" [disabled]="isDisabled1">Increment++</button>
+  <button class="btn2" (click)="deFun()"  [disabled]="isDisabled2">Decrement--</button>
 </div>
 

@@ -7,20 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Test2PageComponent implements OnInit {
   public value = 0;
-  inFun(num: any) {
+  public isDisabled1 = false;
+  public isDisabled2 = true;
+  inFun() {
     if (this.value >= 10) {
-      (num.target as HTMLButtonElement).disabled = true;
+      this.isDisabled1 = true;
     } else {
-      (num.target as HTMLButtonElement).disabled = false;
       this.value++;
+      this.isDisabled2 = false;
     }
     
   }
-  deFun(num: any) {
+  deFun() {
     if (this.value == 0) {
-      (num.target as HTMLButtonElement).disabled = true;
+      this.isDisabled2 = true;
+      
     } else {
-      (num.target as HTMLButtonElement).disabled = false;
+      this.isDisabled1 = false;
       this.value--;
     }
   }
