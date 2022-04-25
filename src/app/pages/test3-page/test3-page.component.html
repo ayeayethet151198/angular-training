@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <table>
+    <tr>
+      <th [attr.colspan]="3">Name</th>
+      <th>Age</th>
+    </tr>
+    <tr *ngFor="let info of infos">
+      <td [attr.colspan]="3">{{ info.name}}</td>
+      <td>{{ info.age }}</td>  
+    </tr>
+  </table>
+
+  <p [class.test]="isTrue">Test Error</p>
+
+  <p>User name is <span [style]="styleExpression">Jack</span></p>
+</div>
