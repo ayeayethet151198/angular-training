@@ -1,0 +1,37 @@
+<div class="wrapper">
+  <h1>Day6 Assignment</h1>
+<div class="form">
+User Name: <input [(ngModel)] = 'userName'> 
+<br><br>
+Email Addr: <input [(ngModel)] = 'email'>
+<br><br>
+Phone No : <input type="number" [(ngModel)] = 'phone' >
+<br><br>
+Address  : <textarea [(ngModel)] = 'address'></textarea>
+<br><br>
+Descript  : <textarea [(ngModel)] = 'description'></textarea>
+<br><br>
+<button (click)="create()">Create</button>
+
+<button (click)="refresh()">Refresh</button>
+</div>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Address</th>
+    <th>Description</th>
+  </tr>
+  <tr *ngFor="let users of uTable">
+    <td>{{users.userName}}</td>
+    <td>{{users.email}}</td>
+    <td>{{users.phone}}</td>
+    <td>{{users.address}}</td>
+    <td>{{users.description}}</td>
+  </tr>
+</table>
+</div>
+
+

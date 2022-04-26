@@ -1,0 +1,42 @@
+.wrapper{
+  
+  h1{
+    text-align: center;
+    color: red;
+  }
+  .form{
+    
+    padding-bottom: 20px;
+    input{
+      padding: 5px;
+    }
+    textarea{
+      resize: none;
+    }
+    button{
+      padding: 5px;
+      color: #FFFFFF;
+      background-color: brown;
+      border-radius: 5px;
+      margin-right: 20px;
+      border: none;
+    }
+  }
+  table{
+    border-collapse: collapse;
+    
+    tr{
+      th{
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #DDD;
+      }
+      td{
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #DDD;
+      }
+    }
+  }
+}
+  
