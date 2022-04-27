@@ -4,6 +4,7 @@ import { Test1PageComponent } from './pages/test1-page/test1-page.component';
 import { Test2PageComponent } from './pages/test2-page/test2-page.component';
 import { Test3PageComponent } from './pages/test3-page/test3-page.component';
 import { Test4PageComponent } from './pages/test4-page/test4-page.component';
+import { Test5PageComponent } from './pages/test5-page/test5-page.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'test4',
     component: Test4PageComponent
+  },
+  {
+    path: 'test5',
+    component: Test5PageComponent
   }
 ];
 

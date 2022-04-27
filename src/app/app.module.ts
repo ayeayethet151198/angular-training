@@ -8,6 +8,7 @@ import { Test2PageComponent } from './pages/test2-page/test2-page.component';
 import { Test3PageComponent } from './pages/test3-page/test3-page.component';
 import { Test4PageComponent } from './pages/test4-page/test4-page.component';
 import { FormsModule } from "@angular/forms";
+import { Test5PageComponent } from './pages/test5-page/test5-page.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from "@angular/forms";
     Test1PageComponent,
     Test2PageComponent,
     Test3PageComponent,
-    Test4PageComponent
+    Test4PageComponent,
+    Test5PageComponent
   ],
   imports: [
     BrowserModule,
