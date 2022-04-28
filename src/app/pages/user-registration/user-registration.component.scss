@@ -1,0 +1,31 @@
+.wrapper{
+  width: 400px;
+  margin: 0 auto;
+  
+  h1{
+    text-align: center;
+    color: red;
+  }
+  .userForm{
+    
+    input{
+      width: 100%;
+      padding: 8px 0;
+      margin-bottom: 10px;
+    }
+    textarea{
+      width: 100%;
+      padding-bottom: 30px;
+      resize: none;
+      margin-bottom: 10px;
+    }
+  }
+  button{
+    padding: 5px 15px;
+    color: #FFFFFF;
+    background-color: brown;
+    border-radius: 5px;
+    margin-right: 20px;
+    border: none;
+  }
+}

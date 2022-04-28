@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <h1>Day8 Assignment</h1>
+  <div class="userForm">
+    <label>Name</label><br>
+    <input [(ngModel)] = 'userName'> <br>
+    <label>Email</label><br>
+    <input [(ngModel)] = 'email'> <br>
+    <label>Phone</label><br>
+    <input type="number" [(ngModel)] = 'phone'> <br>
+    <label>Address</label><br>
+    <textarea [(ngModel)] = 'address'> </textarea><br>
+    <label>Description</label><br>
+    <textarea [(ngModel)] = 'description'> </textarea><br>
+  
+    <button (click)="create()">Create</button>
+    
+  </div>
+</div>

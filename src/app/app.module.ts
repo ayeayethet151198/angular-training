@@ -9,6 +9,8 @@ import { Test3PageComponent } from './pages/test3-page/test3-page.component';
 import { Test4PageComponent } from './pages/test4-page/test4-page.component';
 import { FormsModule } from "@angular/forms";
 import { Test5PageComponent } from './pages/test5-page/test5-page.component';
+import { UserRegistrationComponent } from './pages/user-registration/user-registration.component';
+import { UserListComponent } from './pages/user-list/user-list.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { Test5PageComponent } from './pages/test5-page/test5-page.component';
     Test2PageComponent,
     Test3PageComponent,
     Test4PageComponent,
-    Test5PageComponent
+    Test5PageComponent,
+    UserRegistrationComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,20 @@
+<div class="container">
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Address</th>
+      <th>Description</th>
+    </tr>
+    <tr *ngFor="let users of uTable">
+      <td>{{users.userName}}</td>
+      <td>{{users.email}}</td>
+      <td>{{users.phone}}</td>
+      <td>{{users.address}}</td>
+      <td>{{users.description}}</td>
+    </tr>
+  </table>
+</div>
+
+
