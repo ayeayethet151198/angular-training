@@ -12,7 +12,7 @@ export class UserListComponent implements OnInit {
 
   ngOnInit(): void {
     
-      this.userTable = localStorage.getItem('userList');
+      this.userTable = localStorage.getItem('userReg');
       this.uTable = JSON.parse(this.userTable);
     
   }

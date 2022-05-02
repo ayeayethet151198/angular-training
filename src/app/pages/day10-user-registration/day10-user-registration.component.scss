@@ -1,0 +1,24 @@
+.container{
+  width: 400px;
+  margin: 0 auto;
+  h1{
+    text-align: center;
+    color: red;
+  }
+  form{
+    mat-form-field{
+      display: block;
+      input{
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      textarea{
+        width: 100%;
+        padding-bottom: 30px;
+        resize: none;
+        margin-bottom: 10px;
+      }
+     
+    }
+  }
+}

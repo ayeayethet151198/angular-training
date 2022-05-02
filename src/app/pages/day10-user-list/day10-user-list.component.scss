@@ -1,0 +1,27 @@
+.container{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
+  
+  table{
+    border-collapse: collapse;
+    width: 100%;
+    
+    tr{
+      th{
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #DDD;
+        
+      }
+      td{
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #DDD;
+      }
+    }
+    tr:hover {
+      background-color: coral;
+    }
+  }
+}
