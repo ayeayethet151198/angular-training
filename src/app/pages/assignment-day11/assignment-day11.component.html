@@ -24,15 +24,13 @@
   </div>
 
 </div>
-
+<h2>Member List</h2>
 <div *ngIf="validForm == ''; else showTable" class="invalidform">
-  <h2>Member List</h2>
   <p>There is no registered member to display</p>
 </div>
 
 <ng-template #showTable>
   <div class="validform">
-    <h2>Member List</h2>
     <table border="1">
       <tr>
         <th>ID</th>
@@ -47,7 +45,7 @@
         <td>{{users.name}}</td>
         <td>{{users.email}}</td>
         <td>{{users.doms | date: 'dd/MM/yyyy' }}</td>
-        <td><button mat-flat-button color="primary" (click)="clear(id)">Delete</button></td>
+        <td><button mat-flat-button color="warn" (click)="clear(id)">Delete</button></td>
       </tr>
     </table>
   </div>

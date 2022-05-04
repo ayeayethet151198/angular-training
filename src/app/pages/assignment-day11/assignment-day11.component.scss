@@ -24,23 +24,13 @@
   }
 }
 
-::ng-deep {
-  .mat-radio-button {
-    margin-left: 10px;
+h2 {
+    margin: 15px 0px;
+    text-align: center;
   }
-
-  .mat-form-field-invalid .mat-radio-label-content {
-    color: #f44336;
-  }
-
-  .mat-form-field-invalid .mat-radio-outer-circle {
-    border-color: #f44336 !important;
-  }
-}
 
 .invalidform {
 
-  h2,
   p {
     margin: 15px 0px;
     text-align: center;

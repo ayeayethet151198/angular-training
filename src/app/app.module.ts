@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { NgMaterialModule } from './ng-material/ng-material.module';
 import { AngularMaterailModule } from './angular-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+//pages.
 import { AppComponent } from './app.component';
 import { Test1PageComponent } from './pages/test1-page/test1-page.component';
 import { Test2PageComponent } from './pages/test2-page/test2-page.component';
@@ -40,7 +41,6 @@ import { AssignmentDay11Component } from './pages/assignment-day11/assignment-da
     FormsModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    NgMaterialModule,
     AngularMaterailModule,
   ],
   providers: [],
