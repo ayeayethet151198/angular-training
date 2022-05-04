@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AssignmentDay11Component } from './pages/assignment-day11/assignment-day11.component';
 import { Day10UserListComponent } from './pages/day10-user-list/day10-user-list.component';
 import { Day10UserRegistrationComponent } from './pages/day10-user-registration/day10-user-registration.component';
+import { TestDay11Component } from './pages/test-day11/test-day11.component';
 import { Test1PageComponent } from './pages/test1-page/test1-page.component';
 import { Test2PageComponent } from './pages/test2-page/test2-page.component';
 import { Test3PageComponent } from './pages/test3-page/test3-page.component';
@@ -46,6 +48,14 @@ const routes: Routes = [
   {
     path: 'day10-list',
     component: Day10UserListComponent
+  },
+  {
+    path: 'test/day11',
+    component: TestDay11Component
+  },
+  {
+    path: 'member/register',
+    component: AssignmentDay11Component
   }
 ];
 
