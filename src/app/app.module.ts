@@ -19,7 +19,6 @@ import { Day10UserListComponent } from './pages/day10-user-list/day10-user-list.
 import { TestDay11Component } from './pages/test-day11/test-day11.component';
 import { AssignmentDay11Component } from './pages/assignment-day11/assignment-day11.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,8 +31,8 @@ import { AssignmentDay11Component } from './pages/assignment-day11/assignment-da
     UserListComponent,
     Day10UserRegistrationComponent,
     Day10UserListComponent,
-    AssignmentDay11Component,
-    TestDay11Component
+    TestDay11Component,
+    AssignmentDay11Component
   ],
   imports: [
     BrowserModule,
