@@ -1,7 +1,7 @@
 <div class="template-form-container">
   <h2> Membership Form</h2>
   <div class="my-form-container">
-    <form #myForm="ngForm" (ngSubmit)="submitForm(myForm)" class="my-form">
+    <form #myForm="ngForm" (ngSubmit)="submitForm()" class="my-form">
       <mat-form-field>
         <input matInput placeholder="Name" [(ngModel)]="formData.name" name="name" required>
       </mat-form-field>
@@ -22,10 +22,11 @@
       </div>
     </form>
   </div>
-
 </div>
+
 <h2>Member List</h2>
-<div *ngIf="validForm == ''; else showTable" class="invalidform">
+
+<div *ngIf="validForm.length <= 0; else showTable" class="invalidform">
   <p>There is no registered member to display</p>
 </div>
 
@@ -38,10 +39,9 @@
         <th>Email</th>
         <th>Date</th>
         <th>Action</th>
-
       </tr>
       <tr *ngFor="let users of validForm; let id=index">
-        <td>{{id}}</td>
+        <td>{{id+1}}</td>
         <td>{{users.name}}</td>
         <td>{{users.email}}</td>
         <td>{{users.doms | date: 'dd/MM/yyyy' }}</td>

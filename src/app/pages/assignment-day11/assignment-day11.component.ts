@@ -1,11 +1,6 @@
-import { Component, OnInit, ViewChild} from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
 import {FormControl} from '@angular/forms';
 
-export interface Position {
-  id: string;
-  value: string;
-}
 @Component({
   selector: 'app-assignment-day11',
   templateUrl: './assignment-day11.component.html',
@@ -13,7 +8,6 @@ export interface Position {
 })
 export class AssignmentDay11Component implements OnInit {
 
-  @ViewChild('myForm') public userForm!: NgForm;
   validForm: any = [];
   date = new FormControl(new Date());
   formData = {
@@ -21,11 +15,12 @@ export class AssignmentDay11Component implements OnInit {
     email: '',
     doms : this.date.value,
   };
+
   constructor() { }
   ngOnInit(): void {
-
-  }
-  submitForm(form:NgForm) {
+   }
+  
+  submitForm() {
     this.validForm.push(this.formData);
     this.formData = {
       name: '',
@@ -33,8 +28,8 @@ export class AssignmentDay11Component implements OnInit {
       doms : this.date.value,
     };
   }
-  clear(id:any) {
+
+  clear(id:number) {
     this.validForm.splice(id, 1);
   }
-
 }
