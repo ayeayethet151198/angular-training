@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormBuilder, Validators } from '@angular/forms';
+import { MustMatch } from '../../validators/must-match.validator';
+
 
 @Component({
   selector: 'app-assignment-day12',
@@ -7,7 +9,6 @@ import { FormControl, FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./assignment-day12.component.scss']
 })
 export class AssignmentDay12Component implements OnInit {
-  regForm: any = [];
   
   constructor(private fb: FormBuilder) { }
 
@@ -25,15 +26,16 @@ export class AssignmentDay12Component implements OnInit {
       Validators.required,
       Validators.minLength(6)
     ])),
-    confirmPwd: new FormControl('',Validators.required)
-  });
+    confirmPwd: new FormControl('', Validators.required)
+  },
+     {
+      validator: MustMatch('pwd', 'confirmPwd')
+    });
 
-  public myError = (controlName: string, errorName: string) =>{
-    return this.registrationForm.controls[controlName].hasError(errorName);
+  get myForm() {
+    return this.registrationForm.controls;
   }
-  
-  submitForm(form:any) {
-    this.regForm.push(this.registrationForm);
-    alert('SUCCESS!! :-)\n\n' + JSON.stringify(form.value, null, 4));
+  submitForm() {
+    alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.registrationForm.value, null, 4));
   }
 }
