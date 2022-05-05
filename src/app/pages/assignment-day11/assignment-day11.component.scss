@@ -1,0 +1,69 @@
+.template-form-container {
+  display: inline-block;
+  width: 100%;
+
+  h2 {
+    margin: 15px 0px;
+    text-align: center;
+  }
+
+  .my-form-container {
+    width: 50%;
+    margin: 0 auto;
+
+    .my-form {
+      display: inline-flex;
+      flex-direction: column;
+      width: 80%;
+
+      .submit-button {
+        margin: 20px 0px;
+      }
+    }
+  }
+}
+
+h2 {
+  margin: 15px 0px;
+  text-align: center;
+}
+
+.invalidform {
+
+  p {
+    margin: 15px 0px;
+    text-align: center;
+  }
+}
+
+.validform {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
+
+  h2 {
+    margin: 15px 0px;
+    text-align: center;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    tr {
+      th {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #DDD;
+
+      }
+
+      td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #DDD;
+      }
+    }
+
+  }
+}
