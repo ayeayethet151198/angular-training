@@ -1,0 +1,40 @@
+<div class="sync-validator-container">
+  <h2>User Registration Form</h2>
+  <div class="form-container">
+    <form class="registeration-form" [formGroup]="registrationForm" (ngSubmit)="submitForm()">
+      <mat-form-field>
+        <mat-label>First Name</mat-label>
+        <input matInput formControlName="fname">
+        <mat-error *ngIf="myForm['fname'].hasError('required')">First name is required</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Last Name</mat-label>
+        <input matInput formControlName="lname">
+        <mat-error *ngIf="myForm['lname'].hasError('required')">Last name is required</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="email">
+        <mat-error *ngIf="myForm['email'].hasError('required')">Email is required</mat-error>
+        <mat-error *ngIf="myForm['email'].hasError('pattern')">Please enter a valid email</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput type="password" formControlName="pwd">
+        <mat-error *ngIf="myForm['pwd'].hasError('required')">Password is required</mat-error>
+        <mat-error *ngIf="myForm['pwd'].hasError('minlength')">Password must be at least 6 characters</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Confirm Password</mat-label>
+        <input matInput type="password" formControlName="confirmPwd">
+        <mat-error *ngIf="myForm['confirmPwd'].hasError('required')">Confirm password is required</mat-error>
+        <mat-error *ngIf="myForm['confirmPwd'].hasError('mustMatch')">Password must be match</mat-error>
+      </mat-form-field>
+      <div class="button-container">
+        <button mat-raised-button color="primary" [disabled]="!registrationForm.valid">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
