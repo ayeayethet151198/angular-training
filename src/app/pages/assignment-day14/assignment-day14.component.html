@@ -1,0 +1,96 @@
+<div class="wrapper">
+  <h1>Hotel Guest Registration Form</h1>
+  <div class="form-container">
+    <form class="registeration-form" [formGroup]="guestform" (ngSubmit)="submitForm()">
+      <h2>User Information</h2>
+
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name">
+        <mat-error *ngIf="guestForm['name'].hasError('required')">Name is required</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Address</mat-label>
+        <textarea matInput formControlName="address"></textarea>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="email">
+        <mat-error *ngIf="guestForm['email'].hasError('required')">Email is required</mat-error>
+        <mat-error *ngIf="guestForm['email'].hasError('email') &&  !guestForm['email'].hasError('required')">Please enter a valid email</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Telephone</mat-label>
+        <span matPrefix>+95 &nbsp;</span>
+        <input matInput formControlName="phone" placeholder="9123456780">
+        <mat-icon matSuffix>mode_edit</mat-icon>
+        <mat-error *ngIf="guestForm['phone'].hasError('required')">Telephone is required</mat-error>
+        <mat-error *ngIf="!guestForm['phone'].hasError('required') && guestForm['phone'].hasError('invalidTelephone')">
+          Telephone must be 10 digit mobile number format (9xxxxxxxxx) and start with "9".
+        </mat-error>
+      </mat-form-field>
+
+      <h2>Booking Information</h2>
+      <mat-form-field>
+        <mat-label>Check-in && Check-out Date</mat-label>
+        <mat-date-range-input [rangePicker]="picker" [min]="minDate" required>
+          <input matStartDate formControlName="start" placeholder="Check-in Date">
+          <input matEndDate formControlName="end" placeholder="Check-out Date">
+        </mat-date-range-input>
+        <mat-hint>MM/DD/YYYY-MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-date-range-picker #picker></mat-date-range-picker>
+        <mat-error *ngIf="guestForm['start'].hasError('required') || guestForm['end'].hasError('required')">Choose start date and end date correctly</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Number of Guest in Room</mat-label>
+        <input matInput formControlName="guestInRoom">
+        <mat-error *ngIf="guestForm['guestInRoom'].hasError('pattern')">
+          Only number value accept
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Room Type</mat-label>
+        <mat-select matNativeControl name="roomType" formControlName="roomType" required (ngModelChange)="calculateTotalCost()">
+          <mat-option *ngFor="let selectOption of selectOptions" [value]="selectOption.value"> {{selectOption.label}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <div style="margin-top:10px;">
+        <div style="margin-right:3%; color:#6b6b6b;">
+          <mat-label>Lease Pocket Wifi($5)</mat-label>
+        </div>
+        <mat-radio-group formControlName="wifi" (ngModelChange)="calculateTotalCost()">
+          <mat-radio-button *ngFor="let radioOption of radioOptions" [value]="radioOption.value">{{radioOption.label}}</mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <mat-form-field>
+        <mat-label>Total Cost for 1 Day</mat-label>
+        <span matPrefix>$ &nbsp;</span>
+        <input matInput formControlName="totalCost" readonly="true">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Note/Special Requirements</mat-label>
+        <textarea matInput formControlName="requirements"></textarea>
+        <mat-hint align="end">{{guestForm['requirements'].value.length}} / {{NUMBER_OF_NOTE}}
+        </mat-hint>
+        <mat-error *ngIf="guestForm['requirements'].hasError('maxlength')">
+          Maximum number of word is {{NUMBER_OF_NOTE}}! Exceeded more than limit
+        </mat-error>
+      </mat-form-field>
+
+      <div class="button-container">
+        <button mat-raised-button color="primary" [disabled]="!guestform.valid">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
