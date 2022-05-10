@@ -1,0 +1,38 @@
+<div class="table-container">
+  <h1>User Info List</h1>
+  <table mat-table [dataSource]="userListArr" class="element-table">
+    
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef>#ID</th>
+      <td mat-cell *matCellDef="let userInfo">{{ userInfo.id }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let userInfo">{{ userInfo.name }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="email">
+      <th mat-header-cell *matHeaderCellDef>Email</th>
+      <td mat-cell *matCellDef="let userInfo">{{ userInfo.email }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="age">
+      <th mat-header-cell *matHeaderCellDef>Age</th>
+      <td mat-cell *matCellDef="let userInfo">{{ userInfo.age || '-'}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="phone">
+      <th mat-header-cell *matHeaderCellDef>phNumber</th>
+      <td mat-cell *matCellDef="let userInfo">{{ userInfo.phone || '-'}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="hobby">
+      <th mat-header-cell *matHeaderCellDef>Hobby</th>
+      <td mat-cell *matCellDef="let userInfo">{{ userInfo.hobby || '-' }}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row;columns:displayedColumns"></tr>
+  </table>
+</div>
