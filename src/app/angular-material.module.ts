@@ -22,7 +22,6 @@ import { MatTableModule } from '@angular/material/table';
         MatRadioModule,
         MatButtonModule,
         MatTableModule
-
   ]
 })
 export class AngularMaterailModule { }
