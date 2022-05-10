@@ -20,6 +20,7 @@ import { TestDay11Component } from './pages/test-day11/test-day11.component';
 import { AssignmentDay11Component } from './pages/assignment-day11/assignment-day11.component';
 import { AssignmentDay12Component } from './pages/assignment-day12/assignment-day12.component';
 import { AssignmentDay14Component } from './pages/assignment-day14/assignment-day14.component';
+import { AssignmentDay15Component } from './pages/assignment-day15/assignment-day15.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { AssignmentDay14Component } from './pages/assignment-day14/assignment-da
     TestDay11Component,
     AssignmentDay11Component,
     AssignmentDay12Component,
-    AssignmentDay14Component
+    AssignmentDay14Component,
+    AssignmentDay15Component
   ],
   imports: [
     BrowserModule,

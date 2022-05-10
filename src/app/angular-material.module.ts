@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatButtonModule } from '@angular/material/button';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [],
@@ -20,7 +21,7 @@ import { MatButtonModule } from '@angular/material/button';
         MatSelectModule,
         MatRadioModule,
         MatButtonModule,
-        
+        MatTableModule
   ]
 })
 export class AngularMaterailModule { }
