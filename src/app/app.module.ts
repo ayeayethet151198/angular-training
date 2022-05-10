@@ -21,7 +21,6 @@ import { AssignmentDay11Component } from './pages/assignment-day11/assignment-da
 import { AssignmentDay12Component } from './pages/assignment-day12/assignment-day12.component';
 import { AssignmentDay14Component } from './pages/assignment-day14/assignment-day14.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
