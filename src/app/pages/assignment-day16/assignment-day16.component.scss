@@ -1,0 +1,13 @@
+.table-container {
+  width: 70%;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+  }
+
+  .element-table {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+  }
+}
