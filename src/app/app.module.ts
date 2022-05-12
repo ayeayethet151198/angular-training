@@ -22,6 +22,7 @@ import { AssignmentDay12Component } from './pages/assignment-day12/assignment-da
 import { AssignmentDay14Component } from './pages/assignment-day14/assignment-day14.component';
 import { AssignmentDay15Component } from './pages/assignment-day15/assignment-day15.component';
 import { AssignmentDay16Component } from './pages/assignment-day16/assignment-day16.component';
+import { AssignmentDay18Component } from './pages/assignment-day18/assignment-day18.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { AssignmentDay16Component } from './pages/assignment-day16/assignment-da
     AssignmentDay12Component,
     AssignmentDay14Component,
     AssignmentDay15Component,
-    AssignmentDay16Component
+    AssignmentDay16Component,
+    AssignmentDay18Component
   ],
   imports: [
     BrowserModule,

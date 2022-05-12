@@ -9,6 +9,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [],
@@ -23,7 +24,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
         MatRadioModule,
         MatButtonModule,
         MatTableModule,
-        MatPaginatorModule
+        MatPaginatorModule,
+        MatSortModule
   ]
 })
 export class AngularMaterailModule { }
