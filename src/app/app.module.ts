@@ -23,6 +23,11 @@ import { AssignmentDay14Component } from './pages/assignment-day14/assignment-da
 import { AssignmentDay15Component } from './pages/assignment-day15/assignment-day15.component';
 import { AssignmentDay16Component } from './pages/assignment-day16/assignment-day16.component';
 import { AssignmentDay18Component } from './pages/assignment-day18/assignment-day18.component';
+import { AssignmentDay19Component } from './pages/assignment-day19/assignment-day19.component';
+
+//pipes
+import { CustompipePipe } from './pipes/custompipe.pipe';
+import { Custompipe1Pipe } from './pipes/custompipe1.pipe';
 
 @NgModule({
   declarations: [
@@ -42,7 +47,10 @@ import { AssignmentDay18Component } from './pages/assignment-day18/assignment-da
     AssignmentDay14Component,
     AssignmentDay15Component,
     AssignmentDay16Component,
-    AssignmentDay18Component
+    AssignmentDay18Component,
+    AssignmentDay19Component,
+    CustompipePipe,
+    Custompipe1Pipe
   ],
   imports: [
     BrowserModule,
@@ -52,7 +60,7 @@ import { AssignmentDay18Component } from './pages/assignment-day18/assignment-da
     ReactiveFormsModule,
     AngularMaterailModule,
   ],
-  providers: [],
+  providers: [CustompipePipe, Custompipe1Pipe ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
