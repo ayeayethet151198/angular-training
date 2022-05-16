@@ -64,7 +64,7 @@ const routes: Routes = [
     component: TestDay11Component
   },
   {
-    path: 'day11',
+    path: 'member/register',
     component: AssignmentDay11Component
   },
   {
