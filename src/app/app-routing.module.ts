@@ -19,6 +19,8 @@ import { AssignmentDay15Component } from './pages/assignment-day15/assignment-da
 import { AssignmentDay16Component } from './pages/assignment-day16/assignment-day16.component';
 import { AssignmentDay18Component } from './pages/assignment-day18/assignment-day18.component';
 import { AssignmentDay19Component } from './pages/assignment-day19/assignment-day19.component';
+import { AssignmentDay20Component } from './pages/assignment-day20/assignment-day20.component';
+import { NotFondPageComponent } from './pages/not-fond-page/not-fond-page.component';
 
 const routes: Routes = [
   {
@@ -62,7 +64,7 @@ const routes: Routes = [
     component: TestDay11Component
   },
   {
-    path: 'member/register',
+    path: 'day11',
     component: AssignmentDay11Component
   },
   {
@@ -88,7 +90,20 @@ const routes: Routes = [
   {
     path: 'day19',
     component: AssignmentDay19Component
-  }
+  },
+  {
+    path: 'day20',
+    component: AssignmentDay20Component
+  },
+  {
+    path: '',
+    redirectTo: 'day12',
+    pathMatch: 'full'
+  },
+  {
+    path: '**',
+    component: NotFondPageComponent
+  },
 ];
 
 @NgModule({

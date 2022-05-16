@@ -24,6 +24,8 @@ import { AssignmentDay15Component } from './pages/assignment-day15/assignment-da
 import { AssignmentDay16Component } from './pages/assignment-day16/assignment-day16.component';
 import { AssignmentDay18Component } from './pages/assignment-day18/assignment-day18.component';
 import { AssignmentDay19Component } from './pages/assignment-day19/assignment-day19.component';
+import { AssignmentDay20Component } from './pages/assignment-day20/assignment-day20.component';
+import { NotFondPageComponent } from './pages/not-fond-page/not-fond-page.component';
 
 //pipes
 import { CustompipePipe } from './pipes/custompipe.pipe';
@@ -48,7 +50,9 @@ import { Custompipe1Pipe } from './pipes/custompipe1.pipe';
     AssignmentDay15Component,
     AssignmentDay16Component,
     AssignmentDay18Component,
-    AssignmentDay19Component,
+    AssignmentDay19Component, 
+    AssignmentDay20Component,
+    NotFondPageComponent,
     CustompipePipe,
     Custompipe1Pipe
   ],
