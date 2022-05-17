@@ -1,17 +1,17 @@
 <mat-toolbar>
-    <button mat-icon-button>
-      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
-    </button>
-    <span>Assignment Day-21</span>
-    <button mat-button routerLink="/member/register">
-      Day11
-    </button>
-    <button mat-button routerLink="/day12">
-      Day12
-    </button>
-    <button mat-button routerLink="/day15">
-      Table
-    </button>
+  <button mat-icon-button>
+    <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+  </button>
+  <span>Assignment Day-21</span>
+  <button mat-button routerLink="/member/register">
+    Day11
+  </button>
+  <button mat-button routerLink="/day12">
+    Day12
+  </button>
+  <button mat-button routerLink="/day15">
+    Table
+  </button>
 </mat-toolbar>
 <mat-sidenav-container>
   <mat-sidenav mode="side" #sidenav [(opened)]="opened">
@@ -28,4 +28,4 @@
     </mat-list>
   </mat-sidenav>
   <mat-sidenav-content>
-<router-outlet></router-outlet>
+    <router-outlet></router-outlet>
