@@ -30,6 +30,7 @@ import { NotFondPageComponent } from './pages/not-fond-page/not-fond-page.compon
 //pipes
 import { CustompipePipe } from './pipes/custompipe.pipe';
 import { Custompipe1Pipe } from './pipes/custompipe1.pipe';
+import { AssignmentDay22Component } from './pages/assignment-day22/assignment-day22.component';
 
 @NgModule({
   declarations: [
@@ -50,8 +51,9 @@ import { Custompipe1Pipe } from './pipes/custompipe1.pipe';
     AssignmentDay15Component,
     AssignmentDay16Component,
     AssignmentDay18Component,
-    AssignmentDay19Component, 
+    AssignmentDay19Component,
     AssignmentDay20Component,
+    AssignmentDay22Component,
     NotFondPageComponent,
     CustompipePipe,
     Custompipe1Pipe
@@ -62,9 +64,9 @@ import { Custompipe1Pipe } from './pipes/custompipe1.pipe';
     FormsModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    AngularMaterailModule,
+    AngularMaterailModule
   ],
-  providers: [CustompipePipe, Custompipe1Pipe ],
+  providers: [CustompipePipe, Custompipe1Pipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
