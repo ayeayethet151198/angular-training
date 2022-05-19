@@ -12,7 +12,6 @@ export class AssignmentDay22Component implements OnInit {
 
   ngOnInit(): void {
     this.id = this.ar.snapshot.params['id'];
-    console.log(typeof (this.id));
   }
 
 }
