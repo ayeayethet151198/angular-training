@@ -19,6 +19,7 @@ export class UserSvcService {
       this.router.navigate(['day12']);
     } else {
       this.setAuth(false);
+      alert('invalid info');
       this.router.navigate(['login']);
     }
   }
