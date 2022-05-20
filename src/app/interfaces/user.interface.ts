@@ -1,12 +1,12 @@
-export interface User{
+export interface User {
   id: number;
   name: string;
   email: string;
   age?: number;
   phone?: string;
   hobby?: string;
-} 
-export interface Employee{
+}
+export interface Employee {
   id: number;
   name: string;
   department: string;
@@ -14,4 +14,8 @@ export interface Employee{
   position: string;
   phNumber: string;
   joinDate: string;
+}
+export interface UserLogin {
+  email: string;
+  password: string;
 }

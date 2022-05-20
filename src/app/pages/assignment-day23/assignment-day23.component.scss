@@ -1,0 +1,25 @@
+.login-container {
+  display: inline-block;
+  width: 100%;
+
+  h2 {
+    margin: 15px 0px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .form-container {
+    width: 30%;
+    margin: 0 auto;
+
+    .login-form {
+      display: inline-flex;
+      flex-direction: column;
+      width: 80%;
+
+      .button-container {
+        margin: 20px 0px;
+      }
+    }
+  }
+}
