@@ -25,6 +25,7 @@ import { AssignmentDay22Component } from './pages/assignment-day22/assignment-da
 
 //guards
 import { UserGuard } from './guards/user.guard';
+import { AssignmentDay23Component } from './pages/assignment-day23/assignment-day23.component';
 
 const routes: Routes = [
   {
@@ -69,15 +70,17 @@ const routes: Routes = [
   },
   {
     path: 'member/register',
-    component: AssignmentDay11Component
+    component: AssignmentDay11Component,
   },
   {
     path: 'day12',
-    component: AssignmentDay12Component
+    component: AssignmentDay12Component,
+    canActivate: [UserGuard]
   },
   {
     path: 'day14',
-    component: AssignmentDay14Component
+    component: AssignmentDay14Component,
+    canActivate: [UserGuard]
   },
   {
     path: 'day15',
@@ -97,17 +100,22 @@ const routes: Routes = [
   },
   {
     path: 'day20',
-    component: AssignmentDay20Component
-  },
-  {
-    path: '',
-    redirectTo: 'day12',
-    pathMatch: 'full'
+    component: AssignmentDay20Component,
+    canActivate: [UserGuard]
   },
   {
     path: 'day22/:id',
     component: AssignmentDay22Component,
     canActivate: [UserGuard]
+  },
+  {
+    path: 'login',
+    component: AssignmentDay23Component,
+  },
+  {
+    path: '',
+    redirectTo: 'login',
+    pathMatch: 'full'
   },
   {
     path: '**',
