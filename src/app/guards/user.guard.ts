@@ -13,11 +13,12 @@ export class UserGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    const isAuthenticated = this.userSvc.getAuth();
-    if (!isAuthenticated) {
-      this.router.navigate(['login']);
-      return false;
-    }
+    //const isAuthenticated = this.userSvc.getAuth();
+    //if (!isAuthenticated) {
+    //  this.router.navigate(['login']);
+    //  return false;
+    //}
+    //return true;
     return true;
   }
 

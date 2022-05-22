@@ -19,3 +19,9 @@ export interface UserLogin {
   email: string;
   password: string;
 }
+
+export interface Post {
+  id?: number;
+  title: string;
+  author: string;
+}

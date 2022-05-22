@@ -1,0 +1,38 @@
+{
+  "posts": [
+    {
+      "title": "json-server12",
+      "author": "typicode12",
+      "id": 5
+    },
+    {
+      "title": "aye thet",
+      "author": "aat",
+      "id": 8
+    },
+    {
+      "title": "aat2",
+      "author": "aat2",
+      "id": 10
+    },
+    {
+      "title": "mi aye thet",
+      "author": "mat",
+      "id": 11
+    },
+    {
+      "title": "mi aye thet",
+      "author": "mat",
+      "id": 12
+    },
+    {
+      "title": "aat@gmail.com",
+      "author": "aat",
+      "id": 13
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

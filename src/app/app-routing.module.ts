@@ -22,10 +22,15 @@ import { AssignmentDay19Component } from './pages/assignment-day19/assignment-da
 import { AssignmentDay20Component } from './pages/assignment-day20/assignment-day20.component';
 import { NotFondPageComponent } from './pages/not-fond-page/not-fond-page.component';
 import { AssignmentDay22Component } from './pages/assignment-day22/assignment-day22.component';
+import { AssignmentDay23Component } from './pages/assignment-day23/assignment-day23.component';
+import { AssignmentDay24Component } from './pages/assignment-day24/assignment-day24.component';
+import { PostControlComponent } from './pages/post-control/post-control.component';
 
 //guards
 import { UserGuard } from './guards/user.guard';
-import { AssignmentDay23Component } from './pages/assignment-day23/assignment-day23.component';
+
+//resolvers
+import { PostResolver } from './resolvers/post.resolver';
 
 const routes: Routes = [
   {
@@ -113,9 +118,17 @@ const routes: Routes = [
     component: AssignmentDay23Component,
   },
   {
-    path: '',
-    redirectTo: 'login',
-    pathMatch: 'full'
+    path: 'day24',
+    component: AssignmentDay24Component
+  },
+  {
+    path: 'post',
+    component: PostControlComponent
+  },
+  {
+    path: 'post/:id',
+    component: PostControlComponent,
+    resolve: { post: PostResolver }
   },
   {
     path: '**',
