@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { AngularMaterailModule } from './angular-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 //pages.
 import { AppComponent } from './app.component';
@@ -25,13 +26,15 @@ import { AssignmentDay16Component } from './pages/assignment-day16/assignment-da
 import { AssignmentDay18Component } from './pages/assignment-day18/assignment-day18.component';
 import { AssignmentDay19Component } from './pages/assignment-day19/assignment-day19.component';
 import { AssignmentDay20Component } from './pages/assignment-day20/assignment-day20.component';
+import { AssignmentDay22Component } from './pages/assignment-day22/assignment-day22.component';
+import { AssignmentDay23Component } from './pages/assignment-day23/assignment-day23.component';
+import { AssignmentDay24Component } from './pages/assignment-day24/assignment-day24.component';
+import { PostControlComponent } from './pages/post-control/post-control.component';
 import { NotFondPageComponent } from './pages/not-fond-page/not-fond-page.component';
 
 //pipes
 import { CustompipePipe } from './pipes/custompipe.pipe';
 import { Custompipe1Pipe } from './pipes/custompipe1.pipe';
-import { AssignmentDay22Component } from './pages/assignment-day22/assignment-day22.component';
-import { AssignmentDay23Component } from './pages/assignment-day23/assignment-day23.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +59,8 @@ import { AssignmentDay23Component } from './pages/assignment-day23/assignment-da
     AssignmentDay20Component,
     AssignmentDay22Component,
     AssignmentDay23Component,
+    AssignmentDay24Component,
+    PostControlComponent,
     NotFondPageComponent,
     CustompipePipe,
     Custompipe1Pipe
@@ -66,7 +71,8 @@ import { AssignmentDay23Component } from './pages/assignment-day23/assignment-da
     FormsModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    AngularMaterailModule
+    AngularMaterailModule,
+    HttpClientModule
   ],
   providers: [CustompipePipe, Custompipe1Pipe],
   bootstrap: [AppComponent]
