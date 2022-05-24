@@ -1,0 +1,29 @@
+.table-container {
+  margin: 20px;
+
+  h1 {
+    text-align: center;
+  }
+
+  .search {
+    float: right;
+    clear: both;
+  }
+
+  .data-table {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+
+    .fixed-width {
+      width: 250px;
+    }
+
+  }
+
+  .no-filter {
+    p {
+      clear: both;
+      text-align: center;
+    }
+  }
+}

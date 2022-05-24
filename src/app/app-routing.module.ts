@@ -31,6 +31,7 @@ import { UserGuard } from './guards/user.guard';
 
 //resolvers
 import { PostResolver } from './resolvers/post.resolver';
+import { AssignmentDay25Component } from './pages/assignment-day25/assignment-day25.component';
 
 const routes: Routes = [
   {
@@ -129,6 +130,10 @@ const routes: Routes = [
     path: 'post/:id',
     component: PostControlComponent,
     resolve: { post: PostResolver }
+  },
+  {
+    path: 'day25',
+    component: AssignmentDay25Component,
   },
   {
     path: '**',

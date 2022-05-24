@@ -1,34 +1,24 @@
 {
   "posts": [
     {
-      "title": "json-server12",
-      "author": "typicode12",
-      "id": 5
+      "title": "AI",
+      "author": "user",
+      "id": 1
     },
     {
-      "title": "aye thet",
-      "author": "aat",
-      "id": 8
+      "title": "Typescript",
+      "author": "Ei Maung",
+      "id": 2
     },
     {
-      "title": "aat2",
-      "author": "aat2",
-      "id": 10
+      "title": "Node.JS",
+      "author": "Typecode",
+      "id": 3
     },
     {
-      "title": "mi aye thet",
-      "author": "mat",
-      "id": 11
-    },
-    {
-      "title": "mi aye thet",
-      "author": "mat",
-      "id": 12
-    },
-    {
-      "title": "aat@gmail.com",
-      "author": "aat",
-      "id": 13
+      "title": "React",
+      "author": "SCM Tester",
+      "id": 4
     }
   ],
   "comments": [],
