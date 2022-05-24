@@ -64,7 +64,7 @@ import { Custompipe1Pipe } from './pipes/custompipe1.pipe';
     AssignmentDay23Component,
     AssignmentDay24Component,
     AssignmentDay25Component,
-   AssignmentDay26Component,
+    AssignmentDay26Component,
     ToDoListComponent,
     PostControlComponent,
     NotFondPageComponent,

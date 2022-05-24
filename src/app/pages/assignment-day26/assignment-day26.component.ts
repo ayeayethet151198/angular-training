@@ -29,6 +29,6 @@ export class AssignmentDay26Component implements OnInit {
   }
 
   deleteData(id) {
-    this.toDoListArr.splice(id,1);
+    this.toDoListArr.splice(id, 1);
   }
 }
