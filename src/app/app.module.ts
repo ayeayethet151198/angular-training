@@ -32,6 +32,8 @@ import { AssignmentDay24Component } from './pages/assignment-day24/assignment-da
 import { PostControlComponent } from './pages/post-control/post-control.component';
 import { NotFondPageComponent } from './pages/not-fond-page/not-fond-page.component';
 import { AssignmentDay25Component } from './pages/assignment-day25/assignment-day25.component';
+import { ToDoListComponent } from './pages/to-do-list/to-do-list.component';
+import { AssignmentDay26Component } from './pages/assignment-day26/assignment-day26.component';
 
 //pipes
 import { CustompipePipe } from './pipes/custompipe.pipe';
@@ -62,6 +64,8 @@ import { Custompipe1Pipe } from './pipes/custompipe1.pipe';
     AssignmentDay23Component,
     AssignmentDay24Component,
     AssignmentDay25Component,
+   AssignmentDay26Component,
+    ToDoListComponent,
     PostControlComponent,
     NotFondPageComponent,
     CustompipePipe,

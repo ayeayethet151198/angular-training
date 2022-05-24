@@ -1,0 +1,15 @@
+.container {
+  mat-card {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+    button {
+      color: #ff0000;
+      padding: 10px;
+      border: none;
+    }
+  }
+}

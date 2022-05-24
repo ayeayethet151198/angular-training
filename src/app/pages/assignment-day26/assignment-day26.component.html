@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>To do List</h1>
+  <div class="form-container">
+    <form class="to-do-list-form" [formGroup]="toDoListForm" (ngSubmit)="addToDoList()">
+
+      <mat-form-field>
+        <mat-label>Task</mat-label>
+        <input matInput formControlName="task">
+        <mat-error *ngIf="f['task'].hasError('required')">Please provide task name..</mat-error>
+      </mat-form-field>
+
+      <div class="button-container">
+        <button mat-raised-button color="primary" [disabled]="!toDoListForm.valid">
+          ADD TASK
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div class="parent-container">
+    <app-to-do-list [toDoListFromParent]="toDoListArr" (deleteFromChild)="deleteData($event)"></app-to-do-list>
+  </div>
+</div>

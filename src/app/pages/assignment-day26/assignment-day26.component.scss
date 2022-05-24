@@ -1,0 +1,20 @@
+.container {
+
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+
+  h1 {
+    margin: 15px 0px;
+    color: #336633;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .form-container {
+    div {
+      display: inline;
+      margin-left: 20px;
+    }
+  }
+}

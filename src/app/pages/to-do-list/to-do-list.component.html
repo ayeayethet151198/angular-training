@@ -1,0 +1,6 @@
+<div class="container">
+  <mat-card *ngFor="let todolist of toDoListFromParent;let id = index">
+    {{todolist.task}}
+    <button (click)="sendDataToParent(id)">Remove</button>
+  </mat-card>
+</div>
