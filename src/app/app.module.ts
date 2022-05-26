@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { AngularMaterailModule } from './angular-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 //pages.
 import { AppComponent } from './app.component';
@@ -34,6 +35,7 @@ import { NotFondPageComponent } from './pages/not-fond-page/not-fond-page.compon
 import { AssignmentDay25Component } from './pages/assignment-day25/assignment-day25.component';
 import { ToDoListComponent } from './pages/to-do-list/to-do-list.component';
 import { AssignmentDay26Component } from './pages/assignment-day26/assignment-day26.component';
+import { AssignmentDay27Component } from './pages/assignment-day27/assignment-day27.component';
 
 //pipes
 import { CustompipePipe } from './pipes/custompipe.pipe';
@@ -65,6 +67,7 @@ import { Custompipe1Pipe } from './pipes/custompipe1.pipe';
     AssignmentDay24Component,
     AssignmentDay25Component,
     AssignmentDay26Component,
+    AssignmentDay27Component,
     ToDoListComponent,
     PostControlComponent,
     NotFondPageComponent,
@@ -78,7 +81,8 @@ import { Custompipe1Pipe } from './pipes/custompipe1.pipe';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     AngularMaterailModule,
-    HttpClientModule
+    HttpClientModule,
+    DragDropModule
   ],
   providers: [CustompipePipe, Custompipe1Pipe],
   bootstrap: [AppComponent]
